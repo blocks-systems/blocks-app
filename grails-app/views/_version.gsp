@@ -1,0 +1,1 @@
+<g:message code="default.app.version" />: <g:meta name="app.version"/> (Revision: 188M, Grails: <g:meta name="app.grails.version"/>)
