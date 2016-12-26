@@ -1,0 +1,24 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require mobile
+*= require bootstrap-all
+*= require bootstrap-datetimepicker.min
+*= require select2
+*= require select2-bootstrap
+*= require export
+*= require datatables
+*= require datatables_bootstrap
+*= require font-awesome-all
+*= require fontawesome-iconpicker
+*= require twist-panel
+*= require prettify
+*= require style
+*= require_self
+*/
