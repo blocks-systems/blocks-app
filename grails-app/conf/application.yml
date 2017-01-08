@@ -99,7 +99,6 @@ grails:
                     rejectPublicInvocations: false
                 gsp:
                     layoutAuth: 'auth'
-                roleHierarchy: 'ROLE_SUPER_USER > ROLE_ADMIN ROLE_ADMIN > ROLE_USER'
         hibernate:
             pass:
                 readonly: false
