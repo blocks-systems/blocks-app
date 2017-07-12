@@ -1,4 +1,4 @@
-package tools.blocks
+package blocks
 
 import java.text.DecimalFormatSymbols
 import java.text.NumberFormat

@@ -1,4 +1,4 @@
-package tools.blocks.search
+package blocks.search
 
 class GlobalSearchResult {
 

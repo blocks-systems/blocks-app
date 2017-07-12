@@ -1,4 +1,4 @@
-package tools.blocks
+package blocks
 
 import blocks.Owner
 import blocks.auth.Permission
@@ -6,6 +6,8 @@ import blocks.auth.Role
 import blocks.auth.User
 
 class BootStrap {
+
+    def springSecurityService
 
     def init = { servletContext ->
         def owner  = Owner.findOrSaveWhere(code: 'blocks', name: 'Blocks')
@@ -33,6 +35,9 @@ class BootStrap {
         if (testAdmin == null) {
             testAdmin = new User(username: 'root', email: 'root@blocks.com', passwordExpire: Date.parse("yyyy-MM-dd", "2099-12-31"), accountExpire: Date.parse("yyyy-MM-dd", "2099-12-31"), password: 'root', groups : [superUsers], roles: [userPermission])
             testAdmin.save(flush : true)
+        } else {
+            testAdmin.password = springSecurityService.encodePassword('root')
+            testAdmin.save(flush: true)
         }
     }
     def destroy = {

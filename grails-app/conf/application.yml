@@ -2,10 +2,18 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: tools.blocks
+        defaultPackage: blocks
     spring:
         transactionManagement:
             proxies: false
+    gorm:
+        # Whether to autowire entities. 
+        # Disabled by default for performance reasons.
+        autowire: false         
+        reactor:
+            # Whether to translate GORM events into Reactor events
+            # Disabled by default for performance reasons
+            events: false
 info:
     app:
         name: '@info.app.name@'
@@ -99,11 +107,6 @@ grails:
                     rejectPublicInvocations: false
                 gsp:
                     layoutAuth: 'auth'
-        hibernate:
-            pass:
-                readonly: false
-            osiv:
-                readonly: false
 endpoints:
     jmx:
         unique-names: true
@@ -177,6 +180,7 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
 targetLogsDir: '${userHome}/logs'
 documentPath: '${userHome}/blocks_docs/'
 mailFrom: "support@blocks.tools"

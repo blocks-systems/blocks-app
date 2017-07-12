@@ -1,4 +1,4 @@
-package tools.blocks.autocomplete
+package blocks.autocomplete
 
 import blocks.autocomplete.Item
 
