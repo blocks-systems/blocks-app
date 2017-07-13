@@ -44,7 +44,7 @@ dependencies {
     compile 'org.grails.plugins:elasticsearch:1.2.0'
     compile "blocks:blocks-base:0.3.1"
     compile "blocks:blocks-web:0.3.1"
-    compile "org.grails.plugins:grails-melody-plugin:1.67.0"
+    //compile "org.grails.plugins:grails-melody-plugin:1.67.0"
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
     provided 'org.postgresql:postgresql:9.3-1101-jdbc41'

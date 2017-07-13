@@ -7,7 +7,7 @@
 <meta name="description" content="description">
 <meta name="author" content="Filip Grochowski Emil Wesołowski">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-%{--<link rel="shortcut icon" href="${resource(dir:'images',file:'blocks_favicon.ico')}" type="image/x-icon" />--}%
+<link rel="shortcut icon" href="${resource(dir:'images',file:'blocks_favicon.ico')}" type="image/x-icon" />
 <!--<script type='text/javascript' src='${createLink(controller: "javaScript", action: "scripts")}'></script>-->
 <asset:stylesheet src="application.css" />
 <asset:javascript src="application.js" />
@@ -30,13 +30,13 @@
 				<div class="modal-header-name">
 					<span>Basic table</span>
 				</div>
-				%{--<div class="box-icons">encodeAsHTML
+				<div class="box-icons">
 					<a class="close-link"> <i class="fa fa-times"></i>
 					</a>
-				</div>--}%
+				</div>
 			</div>
 			<div class="devoops-modal-inner"></div>
-			<div class="devoops-modal-botStom"></div>
+			<div class="devoops-modal-bottom"></div>
 		</div>
 	</div>
 	<header class="navbar">
